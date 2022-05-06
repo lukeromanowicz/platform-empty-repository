@@ -33,6 +33,8 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      deployments: write
     needs: build
     steps:
       - uses: chrnorm/deployment-action@releases/v1
